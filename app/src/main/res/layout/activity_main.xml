@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Col:" />
+
+                <EditText
+                    android:id="@+id/txtcol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:width="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=", Row:" />
+
+                <EditText
+                    android:id="@+id/txtrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:width="40dp" />
+
+                <Button
+                    android:id="@+id/btinit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Init" />
+
+                <Button
+                    android:id="@+id/btcalc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Calc" />
+
+                <Button
+                    android:text="Re"
+                    android:id="@+id/btremove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <GridLayout
+                android:id="@+id/grid1"
+                android:background="@color/colorAccent"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <GridLayout
+                android:id="@+id/grid2"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <GridLayout
+                android:id="@+id/grid3"
+                android:background="@color/colorAccent"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>
